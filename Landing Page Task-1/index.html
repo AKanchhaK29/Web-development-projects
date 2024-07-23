@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <span class="material-symbols-outlined">
+                travel_explore
+                </span>
+                Let's Travel
+            </div>
+            <div class="search-container">
+                <input type="text" class="text" placeholder="places to go...">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="language">
+                <span class="material-symbols-outlined">
+                language
+                </span>English
+            </div>
+            <div>
+                <button>Sign in</button>
+            </div>
+        </nav>
+    </header>
+        
+    <section class="discover-section">
+        <div class="discover-text">
+            <h1>Explore the India's Best Places
+                <span>with <br> <strong>Let's Travel</strong></span>
+            </h1>
+
+            <h3>Discover new places, cultures and experiences.</h3>
+
+            <p>At Let's Travel, we believe that the world is meant to be explored, and every journey is a story waiting to be told. Whether you're seeking the serenity of pristine beaches, the thrill of mountain adventures, or the cultural riches of historic cities, we've got you covered. Our expertly curated trips ensure you experience the best each destination has to offer, with comfort and ease. Join us as we venture into the unknown, discover hidden gems, and create unforgettable memories. Your next adventure starts here—let's travel together and make every moment count!</p>
+
+            <button>Book a trip</button>
+        </div>
+        <div class="discover-image">
+            <img src="Images/bg-img.jpg" alt="image">
+        </div>
+    </section>
+
+    <section class="package-container">
+        <div class="package">
+            <div class="package-info">3 days trip <p><span>&#8377;</span> 1999</p></div>
+            <img src="Images/Varanasi.jpg" alt="vns">
+            <h3>Varanasi</h3>
+        </div>
+
+        <div class="package">
+            <div class="package-info">3 days trip <p><span>&#8377;</span> 2999</p></div>
+            <img src="Images/Agra.jpg" alt="Agra">
+            <h3>Agra</h3>
+        </div>
+
+        <div class="package">
+            <div class="package-info">5 days trip <p><span>&#8377;</span> 8999</p></div>
+            <img src="Images/goa.jpg" alt="Goa">
+            <h3>Goa</h3>
+        </div>
+
+        <div class="package">
+            <div class="package-info">5 days trip <p><span>&#8377;</span> 7999</p></div>
+            <img src="Images/kashmir.jpg" alt="kashmir">
+            <h3>Kashmir</h3>
+        </div>
+
+        <div class="package">
+            <div class="package-info">3 days trip <p><span>&#8377;</span> 7999</p></div>
+            <img src="Images/Delhi.jpg" alt="delhi">
+            <h3>Delhi</h3>
+        </div>
+
+        <div class="package">
+            <div class="package-info">5 days trip <p><span>&#8377;</span> 7999</p></div>
+            <img src="Images/Manali.jpg" alt="manali">
+            <h3>Manali</h3>
+        </div>
+
+            <div class="package">
+                <div class="package-info">5 days trip <p><span>&#8377;</span> 8999</p></div>
+                <img src="Images/Mumbai.jpg" alt="mumbai">
+                <h3>Mumbai</h3>
+            </div>
+
+            <div class="package">
+                <div class="package-info">3 days trip <p><span>&#8377;</span> 9999</p></div>
+                <img src="Images/Ladakh.jpg" alt="ladakh">
+                <h3>Ladakh</h3>
+            </div>
+
+            <div class="package">
+                <div class="package-info">3 days trip <p><span>&#8377;</span> 6999</p></div>
+                <img src="Images/Kolkata.jpg" alt="kol">
+                <h3>Kolkata</h3>
+            </div>  
+        </div>
+    </section>
+
+    <section>
+        <div class="review-container">
+            <div class="post-review">
+            <div class="review">
+                <h2>Post a review</h2>
+
+                <form action="form" class="review-form" method="post">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="review">Review : </label>
+                    <textarea id="review" name="review" required rows="3"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            </div>
+
+            <div class="customer-review">
+                <h2>Customer Reviews</h2>
+                <div class="review">
+                    <p>"Amazing experience! Highly recommend Let's Travel for your next trip."</p>
+                    <h4>-Peter Parker</h4>
+                </div>
+                <div class="review">
+                    <p>"The trip was well organized and the guides were very knowledgeable."</p>
+                    <h4>- Gwen Stacy </h4>
+                </div>
+                <div class="review">
+                    <p>"Booking with Let's Travel was the best decision we made for our trip. From start to finish, everything was seamless. Our guide was knowledgeable and passionate about the destinations, making our experience truly unforgettable. Can't wait to book our next adventure with them!"</p>
+                    <h4>- Elena gilbert </h4>
+                </div>
+                <div class="customer-reviews-btn">
+                    <button>See more reviews</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+1234567890">1234567890</a>
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="email: info@letstravel.com">info@letstravel.com</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 - Akanchha Kumari
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
