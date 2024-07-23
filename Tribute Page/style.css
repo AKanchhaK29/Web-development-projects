@@ -1,0 +1,205 @@
+body, h1, h2, p, div, section, img, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: aliceblue;
+    color: #333;
+    padding: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FDF4F5;
+}
+
+#title {
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight: lighter;
+    text-shadow: 1px 0px 2px rgb(209, 6, 108);
+}
+#title:hover{
+    color: #850F8D;
+    font-weight: lighter;
+}
+
+#tribute-info {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: -20px;
+    color: #0066cc;
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section div {
+    margin-bottom: 10px;
+}
+#pi{
+    font-size: 2.5em;
+    text-align: left;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: red;
+    font-style: oblique;
+}
+section > div.personal-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+section > div.personal-info > div {
+    flex: 1;
+    padding: 2px;
+    background: #F8F4E1;
+    border-radius: 8px;
+    box-shadow: -5px 5px 10px rgba(33, 0, 125, 0.308);
+}
+
+section > div.personal-info > div > div > img{
+    /* flex: 0 0 auto; */
+    display: block;
+    max-width: 100%;
+    width: 40%;
+    height: 470px;
+    margin-top: -470px;
+    padding: 20px;
+    float: right;
+}
+
+section > div.personal-info > div > div > p {
+    font-size: 1.2em;
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+section > div.personal-info > div > div > p > span {
+    font-weight: bold;
+    margin-right: 5px; 
+    color: black;
+}
+
+section > div.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F8F4E1;
+    box-shadow: 5px 5px 10px rgba(33, 0, 125, 0.308);
+}
+section > div.flex-container > div{
+    width: 100%;
+}
+section > div.flex-container > div > ul {
+    font-family: 'Georgia, serif';
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+section > div.flex-container > div > ul > li {
+    font-family: 'Courier New, monospace'; 
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 50px;
+    color: brown;
+}
+
+h2 {
+    font-size: 2em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: red;
+    text-transform: capitalize;
+    text-shadow: 1px -2px 1px blue;
+}
+
+p {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+section > div.bio > p{
+    font-size: 1.1em;
+    color: #046A38;
+    text-transform: capitalize;
+
+}
+
+section > div.bio> p >span{
+    font-size: 1.3em;
+    color: black;
+    font-weight: 600
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(126, 136, 9);
+}
+
+.material-symbols-outlined {
+    vertical-align: text-bottom;
+    margin-left: 25px;
+}
+
+@media (max-width: 767px) {
+    section > div.personal-info {
+        flex-direction: column;
+    }
+    section > div.personal-info > div {
+        order: 2;
+    }
+
+    section > div.personal-info > div > div > img {
+        width: 100%;
+        order: 1;
+        height: auto;
+        margin: 10px 0;
+        float: none;
+    }
+    section > div.personal-info > div {
+        flex: 1 1 100%;
+    }
+
+    #title{
+        font-size: 2em;
+    }
+
+    #pi {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
